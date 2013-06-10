@@ -1,16 +1,13 @@
 {
-	"author": "Jeremy Martin <jmar777@gmail.com> (http://twitter.com/jmar777)",
+	"author": "loveencounterflow",
 	"name": "coffeenode-suspend",
 	"description": "Generator-based control flow library designed to work seamlessly with Node's callback conventions.",
 	"version": "0.1.0",
 	"repository": {
 		"type" : "git",
-		"url" : "git://github.com/jmar777/suspend.git"
+		"url" : "git://github.com/loveencounterflow/coffeenode-suspend.git"
 	},
 	"main": "lib/suspend.js",
-	"devDependencies": {
-		"mocha": "1.10.x"
-	},
 	"engines": {
 		"node": ">=0.11.2"
 	}

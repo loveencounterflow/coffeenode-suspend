@@ -1,0 +1,137 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.2.21
+3 info using node@v0.11.2
+4 verbose publish [ '.' ]
+5 verbose read json /Users/flow/cnd/node_modules/coffeenode-suspend/package.json
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/flow/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/tmp.tgz
+14 verbose folder .
+15 info prepublish coffeenode-suspend@0.1.0
+16 silly lockFile 3a52ce78- .
+17 verbose lock . /Users/flow/.npm/3a52ce78-.lock
+18 silly lockFile fad853bd-3451-0-09902150160633028-tmp-tgz /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/tmp.tgz
+19 verbose lock /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/tmp.tgz /Users/flow/.npm/fad853bd-3451-0-09902150160633028-tmp-tgz.lock
+20 silly lockFile 3a52ce78- .
+21 silly lockFile 3a52ce78- .
+22 silly lockFile fad853bd-3451-0-09902150160633028-tmp-tgz /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/tmp.tgz
+23 silly lockFile fad853bd-3451-0-09902150160633028-tmp-tgz /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/tmp.tgz
+24 verbose tar unpack /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/tmp.tgz
+25 silly lockFile 09d9d87b-3451-0-09902150160633028-package /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package
+26 verbose lock /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package /Users/flow/.npm/09d9d87b-3451-0-09902150160633028-package.lock
+27 silly lockFile fad853bd-3451-0-09902150160633028-tmp-tgz /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/tmp.tgz
+28 verbose lock /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/tmp.tgz /Users/flow/.npm/fad853bd-3451-0-09902150160633028-tmp-tgz.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 silly gunzTarPerm extractEntry package.json
+31 silly gunzTarPerm extractEntry .npmignore
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm extractEntry lib/main.js
+34 silly gunzTarPerm extractEntry src/main.coffee
+35 silly gunzTarPerm extractEntry test/tests.js
+36 verbose read json /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package/package.json
+37 silly lockFile 09d9d87b-3451-0-09902150160633028-package /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package
+38 silly lockFile 09d9d87b-3451-0-09902150160633028-package /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package
+39 silly lockFile fad853bd-3451-0-09902150160633028-tmp-tgz /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/tmp.tgz
+40 silly lockFile fad853bd-3451-0-09902150160633028-tmp-tgz /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/tmp.tgz
+41 verbose from cache /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package/package.json
+42 verbose tar pack [ '/Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz',
+42 verbose tar pack   '/var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package' ]
+43 verbose tarball /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz
+44 verbose folder /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package
+45 silly lockFile 09d9d87b-3451-0-09902150160633028-package /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package
+46 verbose lock /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package /Users/flow/.npm/09d9d87b-3451-0-09902150160633028-package.lock
+47 silly lockFile a45cd174-eenode-suspend-0-1-0-package-tgz /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz
+48 verbose lock /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz /Users/flow/.npm/a45cd174-eenode-suspend-0-1-0-package-tgz.lock
+49 silly lockFile 09d9d87b-3451-0-09902150160633028-package /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package
+50 silly lockFile 09d9d87b-3451-0-09902150160633028-package /var/folders/9d/r_0w8wh56tbdg_tsmrjzchl40000gn/T/npm-2792/1371047893451-0.09902150160633028/package
+51 silly lockFile a45cd174-eenode-suspend-0-1-0-package-tgz /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz
+52 silly lockFile a45cd174-eenode-suspend-0-1-0-package-tgz /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz
+53 silly lockFile f46b1186-coffeenode-suspend-0-1-0-package /Users/flow/.npm/coffeenode-suspend/0.1.0/package
+54 verbose lock /Users/flow/.npm/coffeenode-suspend/0.1.0/package /Users/flow/.npm/f46b1186-coffeenode-suspend-0-1-0-package.lock
+55 silly lockFile f46b1186-coffeenode-suspend-0-1-0-package /Users/flow/.npm/coffeenode-suspend/0.1.0/package
+56 silly lockFile f46b1186-coffeenode-suspend-0-1-0-package /Users/flow/.npm/coffeenode-suspend/0.1.0/package
+57 verbose tar unpack /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz
+58 silly lockFile f46b1186-coffeenode-suspend-0-1-0-package /Users/flow/.npm/coffeenode-suspend/0.1.0/package
+59 verbose lock /Users/flow/.npm/coffeenode-suspend/0.1.0/package /Users/flow/.npm/f46b1186-coffeenode-suspend-0-1-0-package.lock
+60 silly lockFile a45cd174-eenode-suspend-0-1-0-package-tgz /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz
+61 verbose lock /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz /Users/flow/.npm/a45cd174-eenode-suspend-0-1-0-package-tgz.lock
+62 silly gunzTarPerm modes [ '755', '644' ]
+63 silly gunzTarPerm extractEntry package.json
+64 silly gunzTarPerm extractEntry .npmignore
+65 silly gunzTarPerm extractEntry README.md
+66 silly gunzTarPerm extractEntry lib/main.js
+67 silly gunzTarPerm extractEntry src/main.coffee
+68 silly gunzTarPerm extractEntry test/tests.js
+69 verbose read json /Users/flow/.npm/coffeenode-suspend/0.1.0/package/package.json
+70 silly lockFile f46b1186-coffeenode-suspend-0-1-0-package /Users/flow/.npm/coffeenode-suspend/0.1.0/package
+71 silly lockFile f46b1186-coffeenode-suspend-0-1-0-package /Users/flow/.npm/coffeenode-suspend/0.1.0/package
+72 silly lockFile a45cd174-eenode-suspend-0-1-0-package-tgz /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz
+73 silly lockFile a45cd174-eenode-suspend-0-1-0-package-tgz /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz
+74 verbose from cache /Users/flow/.npm/coffeenode-suspend/0.1.0/package/package.json
+75 verbose chmod /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz 644
+76 verbose chown /Users/flow/.npm/coffeenode-suspend/0.1.0/package.tgz [ 501, 20 ]
+77 silly lockFile 3a52ce78- .
+78 silly publish { author: { name: 'loveencounterflow' },
+78 silly publish   name: 'coffeenode-suspend',
+78 silly publish   description: 'Generator-based control flow library designed to work seamlessly with Node\'s callback conventions.',
+78 silly publish   version: '0.1.0',
+78 silly publish   repository:
+78 silly publish    { type: 'git',
+78 silly publish      url: 'git://github.com/loveencounterflow/coffeenode-suspend.git' },
+78 silly publish   main: 'lib/main.js',
+78 silly publish   dependencies: { 'coffee-script': '~1.6.2' },
+78 silly publish   engines: { node: '>=0.11.2' },
+78 silly publish   larq:
+78 silly publish    { extensions: {},
+78 silly publish      'compile-statements': {},
+78 silly publish      '%cache': { routes: [Object] } },
+78 silly publish   bugs: { url: 'https://github.com/loveencounterflow/coffeenode-suspend/issues' },
+78 silly publish   readme: 'ERROR: No README data found!',
+78 silly publish   _id: 'coffeenode-suspend@0.1.0',
+78 silly publish   dist: { shasum: '714546a53743500bb4f0ca03fb711b333e03cfb6' },
+78 silly publish   _from: '.' }
+79 verbose url raw coffeenode-suspend
+80 verbose url resolving [ 'https://registry.npmjs.org/', './coffeenode-suspend' ]
+81 verbose url resolved https://registry.npmjs.org/coffeenode-suspend
+82 info trying registry request attempt 1 at 16:39:14
+83 http PUT https://registry.npmjs.org/coffeenode-suspend
+84 http 409 https://registry.npmjs.org/coffeenode-suspend
+85 verbose url raw coffeenode-suspend
+86 verbose url resolving [ 'https://registry.npmjs.org/', './coffeenode-suspend' ]
+87 verbose url resolved https://registry.npmjs.org/coffeenode-suspend
+88 info trying registry request attempt 1 at 16:39:16
+89 http GET https://registry.npmjs.org/coffeenode-suspend
+90 http 200 https://registry.npmjs.org/coffeenode-suspend
+91 error publish fail Cannot publish over existing version.
+91 error publish fail Update the 'version' field in package.json and try again.
+91 error publish fail
+91 error publish fail If the previous version was published in error, see:
+91 error publish fail     npm help unpublish
+91 error publish fail
+91 error publish fail To automatically increment version numbers, see:
+91 error publish fail     npm help version
+92 error System Darwin 12.4.0
+93 error command "node" "/usr/local/bin/npm" "publish"
+94 error cwd /Users/flow/cnd/node_modules/coffeenode-suspend
+95 error node -v v0.11.2
+96 error npm -v 1.2.21
+97 error code EPUBLISHCONFLICT
+98 verbose exit [ 1, true ]

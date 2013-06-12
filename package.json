@@ -1,14 +1,33 @@
 {
-	"author": "loveencounterflow",
-	"name": "coffeenode-suspend",
-	"description": "Generator-based control flow library designed to work seamlessly with Node's callback conventions.",
-	"version": "0.1.0",
-	"repository": {
-		"type" : "git",
-		"url" : "git://github.com/loveencounterflow/coffeenode-suspend.git"
-	},
-	"main": "lib/suspend.js",
-	"engines": {
-		"node": ">=0.11.2"
-	}
+  "author": {
+    "name": "loveencounterflow"
+  },
+  "name": "coffeenode-suspend",
+  "description": "Generator-based control flow library designed to work seamlessly with Node's callback conventions.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/loveencounterflow/coffeenode-suspend.git"
+  },
+  "main": "lib/main.js",
+  "dependencies": {
+    "coffee-script": "~1.6.2"
+  },
+  "engines": {
+    "node": ">=0.11.2"
+  },
+  "larq": {
+    "extensions": {},
+    "compile-statements": {},
+    "%cache": {
+      "routes": {
+        "lib/main.js": 1
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/loveencounterflow/coffeenode-suspend/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "coffeenode-suspend@0.1.0"
 }

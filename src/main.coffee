@@ -29,11 +29,11 @@ suspend = ( generator, options ) ->
         if do_throw
           return iterator.throw error if error?
           if _arguments.length < 3
-            iterator.send _arguments[ 1 ]
+            iterator.next _arguments[ 1 ]
           else
-            iterator.send Array::slice.call _arguments, 1
+            iterator.next Array::slice.call _arguments, 1
         else
-          iterator.send Array::slice.call _arguments
+          iterator.next Array::slice.call _arguments
     #.......................................................................................................
     iterator = generator.apply this, arguments
     iterator.next()
@@ -57,7 +57,61 @@ suspend.eventually = ( handler ) ->
   `after 0, f`. ###
   return process.nextTick handler
 
+#-----------------------------------------------------------------------------------------------------------
+suspend.collect = ( method, P..., handler ) ->
+  ### `collect` is a convenience method for asynchronous functions that comply with the following interface:
+  * They accept a number of arguments, the last of whioch is a callback handler.
+  * The callback handler accepts an `error` and one or more `data` arguments.
+  * The function will call with an unspecified number of data items.
+  * After the last callback has fired, one more callback with no data item or a a single `undefined` or
+    `null` is fired to signal termination.
+  * When termination has been signalled and after an error has occurred, no more callbacks are performed.
 
-# module.exports = require '../lib/main.js'
+  `collect` will collect all values in a list, which will be sent to the callback handler; there will be no
+  extra call to signal completion. Each time `collect` receives data, it looks whether it has received one
+  or more arguments; if there was one argument, that argument will be pushed into the rsults list; if there
+  were more arguments, a list with those values is pushed. The number of data items may differ from callback
+  to callback.
+
+  Usage example:
+
+      step ( resume ) ->*
+        lines = yield collect read_lines_of, route, resume
+        log lines
+
+  Mind the comma after the function name in the example—that function must be passed as the first argument,
+  not called at this point in time. Also Remeber that in JavaScript, passing `library.method` will in most
+  cases make `method` 'forget' about its `this` context, in this case `library`. As a workaround, you may
+  want to write
+
+      lines = yield collect ( library.read_lines_of.bind library ), route, resume
+
+  instead. This is a well-known, if unfortunate fact about JavaScript; proposals on how to better deal with
+  this situation are welcome. ###
+  Z             = []
+  has_finished  = no
+  #.........................................................................................................
+  finish = ->
+    has_finished  = yes
+    handler null, Z
+  #.........................................................................................................
+  method P..., ( error, data... ) ->
+    throw new Error "`collect` was called after having finished" if has_finished
+    return handler error if error?
+    switch data.length
+      when 0
+        finish()
+      when 1
+        first_item    = data[ 0 ]
+        first_item   ?= null
+        return finish() if first_item is null
+        Z.push first_item
+      else
+        Z.push data
+  #.........................................................................................................
+  return null
+
+
+############################################################################################################
 module.exports = suspend
 

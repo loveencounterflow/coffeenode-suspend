@@ -11,19 +11,11 @@
   },
   "main": "lib/main.js",
   "dependencies": {
-    "coffee-script": "~1.6.2"
+    "coffee-script": "~1.7.1",
+    "coffy-script": "~11.6.3"
   },
   "engines": {
     "node": ">=0.11.2"
-  },
-  "larq": {
-    "extensions": {},
-    "compile-statements": {},
-    "%cache": {
-      "routes": {
-        "lib/main.js": 1
-      }
-    }
   },
   "bugs": {
     "url": "https://github.com/loveencounterflow/coffeenode-suspend/issues"

@@ -47,7 +47,7 @@ suspend.step = ( stepper ) ->
 
 #-----------------------------------------------------------------------------------------------------------
 suspend.after = ( time_s, handler ) ->
-  ### `after` is a thin shim around `setTimeout` that adheres to NodeJS conventions, taking a `handler`
+  ### `after` is a shim for `setTimeout` that adheres to NodeJS conventions, taking a `handler`
   callback function as last argument. Also, the timeout is given in humane seconds rather than in ms. ###
   return setTimeout handler, time_s * 1000
 
@@ -56,6 +56,18 @@ suspend.eventually = ( handler ) ->
   ### `eventually f` is just another name for `process.nextTick f`—which in turn is basically equivalent to
   `after 0, f`. ###
   return process.nextTick handler
+
+#-----------------------------------------------------------------------------------------------------------
+suspend.immediately = ( handler ) ->
+  ### `immediately f` is just another name for `setImmediate f`, which is very similar to
+  `process.nextTick`. ###
+  return process.nextTick handler
+
+#-----------------------------------------------------------------------------------------------------------
+suspend.every = ( time_s, handler ) ->
+  ### `every` is a shim for `setIntervall` that adheres to NodeJS conventions, taking a `handler`
+  callback function as last argument. Also, the timeout is given in humane seconds rather than in ms. ###
+  return setInterval handler, time_s * 1000
 
 #-----------------------------------------------------------------------------------------------------------
 suspend.collect = ( method, P..., handler ) ->

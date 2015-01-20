@@ -36,7 +36,7 @@ suspend = ( generator, options ) ->
           iterator.next Array::slice.call _arguments
     #.......................................................................................................
     iterator = generator.apply this, arguments
-    iterator.next()
+    return if iterator.next? then iterator.next() else null
 
 #-----------------------------------------------------------------------------------------------------------
 suspend.step = ( stepper ) ->

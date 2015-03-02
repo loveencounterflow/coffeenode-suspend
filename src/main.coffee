@@ -46,6 +46,13 @@ suspend.step = ( stepper ) ->
   return R()
 
 #-----------------------------------------------------------------------------------------------------------
+suspend.wrap = suspend.step.wrap = ( method, handler ) ->
+  ### Since i've found that rarely some functions don't like to be called using `yield f resume`, i've added
+  `suspend.wrap` (a.k.a. `suspend.step.wrap`) as a very thin wrapper that avoids such problems; simply
+  call `yield step.wrap f, resume` in such cases. ###
+  method -> handler()
+
+#-----------------------------------------------------------------------------------------------------------
 suspend.after = ( time_s, handler ) ->
   ### `after` is a shim for `setTimeout` that adheres to NodeJS conventions, taking a `handler`
   callback function as last argument. Also, the timeout is given in humane seconds rather than in ms. ###

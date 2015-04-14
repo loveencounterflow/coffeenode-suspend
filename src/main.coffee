@@ -71,6 +71,19 @@ suspend.immediately = ( handler ) ->
   return setImmediate handler
 
 #-----------------------------------------------------------------------------------------------------------
+suspend.repeat_immediately = ( method ) ->
+  ### Accepts a function that should (when called without arguments) return a trueish or a falsey value
+  to indicate whether to (when trueish) continue repeating or else (when falsey) stop repeating. The
+  method will be called right after calling `repeat_immediately` itself for the first time. Depending on
+  the return value, it will be scheduled to be run again with `setImmediate` semantics (i.e. like being
+  scheduled with `setTimeout f, 0`) as long as it doesn't return a falsey value. ###
+  f = ->
+    return unless method()
+    setImmediate f
+  f()
+  return null
+
+#-----------------------------------------------------------------------------------------------------------
 suspend.every = ( time_s, handler ) ->
   ### `every` is a shim for `setIntervall` that adheres to NodeJS conventions, taking a `handler`
   callback function as last argument. Also, the timeout is given in humane seconds rather than in ms. ###

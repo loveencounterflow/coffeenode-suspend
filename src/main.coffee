@@ -68,7 +68,7 @@ suspend.eventually = ( handler ) ->
 suspend.immediately = ( handler ) ->
   ### `immediately f` is just another name for `setImmediate f`, which is very similar to
   `process.nextTick`. ###
-  return process.nextTick handler
+  return setImmediate handler
 
 #-----------------------------------------------------------------------------------------------------------
 suspend.every = ( time_s, handler ) ->

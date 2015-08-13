@@ -4,14 +4,13 @@
   },
   "name": "coffeenode-suspend",
   "description": "Generator-based control flow library designed to work seamlessly with Node's callback conventions.",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "repository": {
     "type": "git",
     "url": "git://github.com/loveencounterflow/coffeenode-suspend.git"
   },
   "main": "lib/main.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "engines": {
     "node": ">=0.11.2"
   },

@@ -11,8 +11,6 @@
   },
   "main": "lib/main.js",
   "dependencies": {
-    "coffee-script": "~1.7.1",
-    "coffy-script": "~11.6.3"
   },
   "engines": {
     "node": ">=0.11.2"

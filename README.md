@@ -24,8 +24,8 @@ some examples of `suspense` in action.
 # ToDo
 
 * [ ] write tests
-* [ ] (¿) rename (?)
-* [ ] (¡¡¡) make part of CND (!!!)
+* [ ] ¿rename (?)
+* [ ] ¡make part of CND!
 * [ ] ¿adopt funny symbols for `step`, `resume`?
 * [ ] make `suspend.step` the default export
 * [ ] fix error when `step` is called with synchronous function

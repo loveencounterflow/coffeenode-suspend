@@ -34,7 +34,7 @@ some examples of `suspense` in action.
 * [ ] incorporate minimal version of https://github.com/caolan/async `parallel(Limit)`
 * [ ] incorporate minimal version of https://github.com/caolan/async `series`
 * [ ] API could be `{ step, parallel, series, } = require 'YOURNAMEHERE'` and `step = require 'YOURNAMEHERE'`
-  (i.e. `step.step == `step`, but what shall's)
+  (i.e. `step.step == step`, but what shall's)
 * [ ] remove `suspend.after`
 * [ ] remove `suspend.collect`
 * [ ] remove `suspend.eventually`

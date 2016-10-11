@@ -28,6 +28,7 @@ some examples of `suspense` in action.
 * [ ] ¿adopt funny symbols for `step`, `resume`?
 * [ ] make `suspend.step` the default export
 * [ ] fix error when `step` is called with synchronous function
+* [ ] probably impossible: can we check that both yield and resume are present? using a wrapper perhaps?
 * [ ] check https://github.com/jmar777/suspend for refinements of `step` itself
 * [ ] check https://github.com/jmar777/suspend for worthwhile additions
 * [ ] incorporate minimal version of https://github.com/caolan/async `parallel(Limit)`

@@ -20,3 +20,30 @@ All of which should be true for this version of suspend, too. See what's differe
 Head over to the [CoffyScript Readme](https://github.com/loveencounterflow/coffy-script#suspension-2) to see
 some examples of `suspense` in action.
 
+
+# ToDo
+
+* [ ] write tests
+* [ ] (¿) rename (?)
+* [ ] (¡¡¡) make part of CND (!!!)
+* [ ] ¿adopt funny symbols for `step`, `resume`?
+* [ ] make `suspend.step` the default export
+* [ ] fix error when `step` is called with synchronous function
+* [ ] check https://github.com/jmar777/suspend for refinements of `step` itself
+* [ ] check https://github.com/jmar777/suspend for worthwhile additions
+* [ ] incorporate minimal version of https://github.com/caolan/async `parallel(Limit)`
+* [ ] incorporate minimal version of https://github.com/caolan/async `series`
+* [ ] API could be `{ step, parallel, series, } = require 'YOURNAMEHERE'` and `step = require 'YOURNAMEHERE'`
+  (i.e. `step.step == `step`, but what shall's)
+* [ ] remove `suspend.after`
+* [ ] remove `suspend.collect`
+* [ ] remove `suspend.eventually`
+* [ ] remove `suspend.every`
+* [ ] remove `suspend.immediately`
+* [ ] remove `suspend.repeat_immediately`
+* [ ] remove `suspend.wrap`
+
+
+
+
+
